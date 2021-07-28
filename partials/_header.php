@@ -10,6 +10,7 @@
     <!-- bootstrap core css -->
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap">
     <!-- style personalise -->
     <link rel="stylesheet" href="assets/css/css2.css">
 

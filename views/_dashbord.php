@@ -9,32 +9,25 @@
         <div class="row">
             <div class="col-lg-5 col-md-6">
                 <form method="post">
-                    <h5>suprimer un produit</h5>
+                    <h5>suprimer un Met</h5>
                     <label for="staticEmail2" class="visually-hidden">code_mets</label><br>
                     <input type="number" name="idproduit" class="form-control" id="staticEmail2"><br>
-                    <button type="submit" name="suprimer" class="btn btn-primary">suprimer un nouveau met</button>
+                    <button type="submit" name="suprimer" class="btn btn-primary">suprimer un met</button>
                 </form><br>
-                <div class="row  row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <?php foreach ($produits as $produit): ?>
-                        <div class="col-lg-5 col-md-6">
-                            <div class="card shadow-sm">
-                                <h1 class="text-center py-5"><?= $produit->Nom_mets_cul ?></h1>
-                                <img src="<?= substr($produit->image_met, 0,200)  ?>"</img>
-
-
+                <?php foreach ($produits as $produit): ?>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="<?= $produit->image_met  ?>" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
                                 <div class="card-body">
-                                    <p class="card-text"><?= $produit->description ?></p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">commander</button>
-                                        </div>
-                                        <small class="text-muted">region:<strong><?= $produit->regions?></strong></small>
-                                    </div>
+                                    <h5 class="card-title"><?= $produit->CODE_METS_CUL ?></h5>
                                 </div>
                             </div>
                         </div>
-                    <?php endforeach; ?>
-                </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
             <div class="col-lg-5 col-md-6">
                 <form method="post">

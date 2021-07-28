@@ -6,6 +6,7 @@ if (!$_SESSION['password']){
 }
 
 require 'config/mets.php';
+$produits = afficher();
 
 
 require 'partials/_header_da.php';

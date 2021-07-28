@@ -18,34 +18,30 @@
 </section>
 
 
-<div class="album py-5 bg-light">
+<section class="available merriweather py-5">
     <div class="container">
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-
-        <?php foreach ($produits as $produit): ?>
-            <div class="col-lg-5 col-md-6">
-                <div class="card shadow-sm">
-                        <h1 class="text-center py-5"><?= $produit->Nom_mets_cul ?></h1>
-                        <img src="<?= substr($produit->image_met, 0,200)  ?>"</img>
-
-
-                    <div class="card-body">
-                        <p class="card-text"><?= $produit->description ?></p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">commander</button>
-                            </div>
-                            <small class="text-muted">region:<strong><?= $produit->regions?></strong></small>
+        <div class="row">
+            <?php foreach ($produits as $produit): ?>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="<?= $produit->image_met  ?>" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $produit->Nom_mets_cul ?></h5>
+                            <p class="card-text"><?= $produit->description ?></p>
+                            <p class="card-text"><small class="text-muted">region:<strong><?= $produit->regions?></strong></small></p>
                         </div>
                     </div>
                 </div>
             </div>
-        <?php endforeach; ?>
-
-
-
+            <?php endforeach; ?>
         </div>
     </div>
-</div>
+</section>
+
+<div class="separetor wow fadeInUp" data-wow-duration="2s" style="background: #10f1e7!important;"></div>
+
+
+

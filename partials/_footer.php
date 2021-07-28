@@ -57,7 +57,8 @@
 </section>
 
 
-<script src="assets/script/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/bootstrap.min.js"></script>
 
 </body>
 </html>

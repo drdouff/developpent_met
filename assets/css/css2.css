@@ -25,23 +25,23 @@
 }
 
 .banner{
-    background: linear-gradient(rgba(222, 216, 216, 0.5), rgba(196, 170, 170, 0.5)), url(../imgs/banner/banner1.jpg) center center fixed
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/banner/banner1.jpg) center center fixed
     no-repeat;
     background-size: cover;
     height: 800px;
 }
 
 
-.dd-banner{
-    background: linear-gradient(rgba(0,0,0,.5), rgba(52, 43, 43, 0.5)),  center center fixed
-    no-repeat;
-    background-size: cover;
-    height: 800px;
+.dd-banner {
+    background: #5a6268;
+
+
+}
 
 .banner .banner-desc{
     font-size: 40px;
     font-weight: 400;
-    color: #fff;
+    color: #bd7f7f;
 }
 
 .btn-order{
@@ -60,3 +60,16 @@
 .cc-footer{
     background-color: rgba(0,0,0,.4);
 }
+
+.separetor {
+    display: none;
+}
+
+.separetor {
+    width: calc(100% - 30px);
+    height: 5px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    background: var(--primary-color, #0085E4);
+}
+
