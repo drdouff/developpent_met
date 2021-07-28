@@ -1,0 +1,62 @@
+@import url('fonts.googleapis.com/css2?family=redressed&family=merriweather:wght@300;400;700&display=swap');
+
+
+
+.redressed{
+    font-family: 'redressed', cursive;
+}
+
+.merriweather{
+    font-family: 'merriweather', serif;
+}
+
+.cc-navbar{
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family: 'merriweather',serif;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.54);
+    z-index: 90;
+
+}
+
+
+.cc-navbar .nav-link:hover{
+    padding-bottom: 20px;
+    border-bottom-color: var(--bs-teal);
+}
+
+.banner{
+    background: linear-gradient(rgba(222, 216, 216, 0.5), rgba(196, 170, 170, 0.5)), url(../imgs/banner/banner1.jpg) center center fixed
+    no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+
+.dd-banner{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(52, 43, 43, 0.5)),  center center fixed
+    no-repeat;
+    background-size: cover;
+    height: 800px;
+
+.banner .banner-desc{
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.btn-order{
+    color: var(--bs-teal);
+    border-color: var(--bs-teal);
+    transition: 0.5s;
+}
+
+.btn-order:hover,
+.btn-order :active{
+    color: #fff;
+    background-color: var(--bs-teal);
+}
+
+
+.cc-footer{
+    background-color: rgba(0,0,0,.4);
+}
