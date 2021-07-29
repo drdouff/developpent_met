@@ -27,10 +27,10 @@
                     <a class="nav-link active" aria-current="page" href="index.php">acceuil</a>
                 </li>
                 <li class="nav-item pe-4">
-                    <a class="nav-link" href="#">article</a>
+                    <a class="nav-link" href="Admin/ajouter_mets.php">ajouter mets </a>
                 </li>
                 <li class="nav-item pe-4">
-                    <a class="nav-link"href="contact.php">Admit</a>
+                    <a class="nav-link"href="contact.php">Suprimer mets</a>
                 </li>
             </ul>
         </div>
