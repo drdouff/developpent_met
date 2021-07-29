@@ -1,3 +1,15 @@
+<?php
+
+
+use Michelf\Markdown;
+
+
+
+
+
+
+?>
+
 <section class="banner d-flex justify-content-center align-items-center pt-5" xmlns="http://www.w3.org/1999/html">
     <div class="container my-5 py-5">
         <div class="row">
@@ -6,8 +18,8 @@
                 <h1 class=" text-capitalize py-3 redressed banner-desc">
                     Les plats Camerounais les plus populaires
                 </h1>
-                <p class="text-light">
-                    Le Cameroun, Afrique en miniature et en raison de sa diversité ethnique et culturelle,
+                <p class="text-light">  <?= Markdown::defaultTransform('');?>
+                    Le cameroun , Afrique en miniature et en raison de sa diversité ethnique et culturelle,
                     présente une cuisine variée.
                     Ses recettes riches en couleurs sont faites à la base d’épices et de condiments
                     qui lui valent un goût extraordinaire.
@@ -22,7 +34,7 @@
     <div class="container">
         <div class="row">
             <?php foreach ($produits as $produit): ?>
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3" style="max-width: 640px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="<?= $produit->image_met  ?>" class="img-fluid rounded-start" alt="...">
@@ -36,6 +48,7 @@
                     </div>
                 </div>
             </div>
+
             <?php endforeach; ?>
         </div>
     </div>

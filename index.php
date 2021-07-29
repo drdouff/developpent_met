@@ -1,4 +1,5 @@
 <?php
+require 'vendor/autoload.php';
 $titel="acceuil";
 require 'config/database.php';
 require 'config/mets.php';
@@ -10,6 +11,7 @@ require 'partials/_header.php';
 
 
 <?php
+
 require_once 'views/_index.php'
 ?>
 
